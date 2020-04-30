@@ -67,16 +67,15 @@ class _HomePageState extends State<HomePage> {
               replacement:
                   Text("Click the button below to get Instagram Login."),
             ),
-            Visibility(
-              visible: _errorMsg != null,
-              child: Text("Error occured: $_errorMsg"),
-            ),
             FlatButton.icon(
               icon: Icon(Icons.input),
-              label: Text("Get Profile Data", ),
+              label: Text(
+                "Get Profile Data",
+              ),
               onPressed: _loginAndGetData,
               color: Colors.pink.shade400,
             ),
+            if (_errorMsg != null) Text("Error occured: $_errorMsg"),
           ],
         ),
       ),
