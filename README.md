@@ -2,6 +2,8 @@
 
 This is a sample app demonstrating how to use the Instagram Basic Display API in Flutter.
 
+![demo2](https://blog.maskys.com/content/images/2020/04/authorize.jpg)
+![demo1](https://blog.maskys.com/content/images/2020/04/results-1.jpg)
 
 
 ## Getting Started
