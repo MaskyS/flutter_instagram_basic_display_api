@@ -1,16 +1,13 @@
 # instagram_basic_display_api_flutter
 
-A new Flutter project.
+This is a sample app demonstrating how to use the Instagram Basic Display API in Flutter.
+
+
 
 ## Getting Started
+Full guide here: https://blog.maskys.com/using-the-instagram-basic-display-api-in-flutter/
 
-This project is a starting point for a Flutter application.
+Quick-start:
+Setup an Instagram App in Facebook for Developers and copy your app secret and other details into `lib/constants.dart`. 
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Also replace your redirect url in `android/app/src/main/AndroidManifest.xml` in the `intent-filter`.

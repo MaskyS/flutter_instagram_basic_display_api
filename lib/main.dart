@@ -11,9 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'IG Flutter',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: HomePage(),
     );
   }
@@ -82,7 +80,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  _loginAndGetData() {
+  Future<void> _loginAndGetData() async {
     _igApi.authenticate().then(
       (simpleAuth.Account _user) async {
         simpleAuth.OAuthAccount user = _user;
